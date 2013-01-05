@@ -1,0 +1,42 @@
+---
+title: Photo Gallery
+layout: default
+---
+<style type="text/css">
+.tn {
+  padding:0px 5px 10px 0px;
+  cursor:pointer;
+}
+</style>
+<div class="para">
+ <img src="images/photogallery-header.jpg" /><p/>Nails Only has a friendly, clean and relaxing atmosphere. At 1,500 square feet, it has plenty of room to devote personal attention to each customer. With wireless Internet and a mystical design and décor, it possesses a unique ambience all its own.
+<div class="tn_holder">
+  <img src="photogallery/thumbnails/MVC-001F.JPG" class="tn" />
+  <img src="photogallery/thumbnails/MVC-003F.JPG"  class="tn" />
+  <img src="photogallery/thumbnails/MVC-012F.JPG"  class="tn" />
+  <img src="photogallery/thumbnails/MVC-016F.JPG"  class="tn" />
+  <img src="photogallery/thumbnails/MVC-017F.JPG"  class="tn" />
+    <img src="photogallery/thumbnails/MVC-008F.JPG"  class="tn" />
+</div>
+<div class="photo">
+  <img src="photogallery/MVC-001F.JPG" id="photo" width="533" height="400"/>
+</div>
+
+</div>
+
+<script src="jquery.js"></script>
+<script src="photo.js"></script>
+<script>
+$(document).ready( function() {
+  simplePreload('photogallery/MVC-001F.JPG','photogallery/MVC-003F.JPG','photogallery/MVC-012F.JPG','photogallery/MVC-016F.JPG','photogallery/MVC-017F.JPG','photogallery/MVC-008F.JPG');
+
+  $(".tn_holder img").click(
+    function() {  
+      var newSrc = $(this).attr('src');
+      newSrc = newSrc.replace(/\/thumbnails/,''); 
+      $(".photo img").attr('src', newSrc);
+      
+    } 
+  )
+});
+</script>
