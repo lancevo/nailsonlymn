@@ -57,9 +57,13 @@ a {
 .imgPadLeft {
 	padding-left:20px;
 }
+#reflex .rightImg {
+	float:right;
+}
 .item {
 	color:#ED1C24;
 	font-weight:bold;
+	font-size:16px;
 }
 .pricelist {
 	width:300px;
@@ -90,6 +94,13 @@ a {
 }
 .png {behavior: url(iepngfix.htc); width:375px; height:75px }
 .photo {
-width:533px;
-height:400px;
+	width:533px;
+	height:400px;
+}
+
+.pricetable {
+	width:375px;
+}
+.pricetable tr td:first-child{
+	width:80%;
 }
