@@ -4,6 +4,7 @@ author: lv
 client: nailsonlymn.com
 description: set style to nav
 */
+
 var currURL = location.href;
 var currNavId = "";
 if (currURL.indexOf('nail-care')>=0) {
@@ -20,6 +21,8 @@ if (currURL.indexOf('nail-care')>=0) {
     currNavId = 'm_photo';	
 } else if (currURL.indexOf('contact-us')>=0) {
     currNavId = 'm_contactus';	
+} else if (currURL.indexOf('testimonials')>=0) {
+    currNavId = 'm_testimonials';  
 } else if (currURL.indexOf('foot-and-hand-massage')>=0) {
     currNavId = 'm_fhmassage';	
 } else if (currURL.indexOf('price-list')>=0) {
