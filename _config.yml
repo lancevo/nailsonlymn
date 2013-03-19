@@ -1,3 +1,4 @@
 auto: true
 pygments: true
 server_port: 5000
+destination: _site
