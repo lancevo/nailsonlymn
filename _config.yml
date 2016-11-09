@@ -1,4 +1,4 @@
 auto: true
-pygments: true
+highlighter: rouge
 server_port: 5000
 destination: _site
